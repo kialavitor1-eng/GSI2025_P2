@@ -1,0 +1,73 @@
+﻿<html lang="pt-PT">
+<!-- Utilização tipo 1 -  criação de paginas dinamicas com DHTML
+exemplo de colocação de codigo javascript
+- uso de javascript como função e como codigo de uso directo.
+- efeitos da função document.write dependendo da localização do codigo javascript
+-->
+	<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JavaScript - Exemplo interacção</title>
+
+		<style type="text/css">
+<!--
+			a:link 		{color: 		white;
+					 font-family: 		verdana;
+					 font-size: 		12
+					}
+			a:active 	{color: 		yellow}
+			a:visited	{color: 		White;
+					 text-decoration: 	none;
+					 font-family: 		verdana;
+					 font-size: 		12
+					}
+			font	{color: 			Green;
+					 text-decoration: 	underline;
+					 text-transform: 	uppercase;
+					 font-family: 		verdana;
+					 font-size: 		14
+					}		
+-->
+		</style>
+		<script language="javascript" type="text/javascript">
+			function teste(){
+			//linha de codigo para escrever texto na pagina
+			
+				document.getElementById('nada').innerHTML="agora com innerHTML"
+			//alert("Teste de colocacao de JavaSript" + '\n' + "Esta linha é escrita OnPageLoad");
+			}
+			//função de escrita no inicio da pagina
+			{
+			//linha de codigo para escrever texto na pagina
+			document.write("<br><font>no head da pagina</font>");
+			//alert("Teste de colocacao de JavaSript" + '\n' + "Esta linha é escrita OnPageLoad");
+			}
+			
+			function carrega(){
+				alert("Teste de colocacao de JavaSript" + '\n' + "Esta linha é escrita OnPageLoad");
+			}
+		</script>
+		
+	</head>
+	<body onLoad="carrega()">
+<!-- Repare que não há qualquer codigo HTML na página...-->
+		<h3 id="muda">Aqui começa a página</h3>
+
+		<script language="javascript" type="text/javascript">
+			//função de escrita no no decorrer da escrita da pagina
+			{
+			//linha de codigo para escrever texto na pagina
+			document.write("<br><font>a meio da pagina</font>");
+			alert("Teste de colocacao de JavaSript" + '\n' + "Esta linha é escrita a meio da pagina");
+			}
+		</script>
+
+		<br>
+		<h3 ondblclick="document.getElementById('nada').innerHTML='agora com innerHTML';alert('Teste de colocacao de JavaSript' + '\n' + 'Esta linha é escrita a meio da pagina');">Esta é a ultima linha do texto</h3>
+		
+		<p id="nada"></p>
+		
+		<div id="tudo">algum texto</div>
+
+	</body>
+</html>

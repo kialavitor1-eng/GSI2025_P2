@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    // following configurations are for launching Edge, Chrome and Firefox browsers to test JavaScript locally
+    // --> "file": "${relativeFile}" is used to launch the current file in the browser
+    // When using a local server, "file" should be replaced with "url" to specify the URL to open in the browser
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Edge",
+            "request": "launch",
+            "type": "msedge",
+            "file": "${relativeFile}", // launch the current file in the browser
+            "trace": true
+        },
+    // A launch file can specify multiple configurations to start from
+    // This can be used to launch different browsers, to launch the same browser with different settings
+    // or to launch from local files or from a local server, even to launch from different local servers
+    // for now, we set configurations to start from different browsers, always local files
+
+    // To change start configuration, use the dropdown menu in the debug panel and select the configuration you want to start with
+        {
+            "name": "Launch chrome",
+            "request": "launch",
+            "type": "chrome",
+            "file": "${relativeFile}", // launch the current file in the browser
+            "trace": true
+        },
+        {
+            "name": "Launch firefox",
+            "request": "launch",
+            "type": "firefox",
+            "file": "${workspaceFolder}/${relativeFile}", // launch the current file in the browser
+        }
+
+    ]
+}

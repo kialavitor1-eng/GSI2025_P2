@@ -1,0 +1,45 @@
+<html lang="pt">
+<!-- 	Acesso a informação de sistema
+	exemplo de manipulação de classes e objectos de sistema e browser - Objectos DOM
+	-  Objecto WINDOWS : Janela de browser
+	Redireccionamento de páginas utilizando objecto WINDOW
+
+	Este exemplo requer o ficheiro JScomJavaScript.htm
+-->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>JS Redirect</title>
+		<SCRIPT language="JavaScript">
+
+
+/* 	Objectos DOM
+	O standard do HTML define um conjunto de elementos, atributos e eventos a serem utilizados para construção de páginas.
+	Estes elementos standard designam-se por objectos HTML DOM - DOCUMENT OBJECT MODEL for HTML
+	o HTML DOM também define a forma como esses elementos podem ser assedidos e manipulados via javascript
+	embora o HTML DOM permita aceder a grande numero de elementos do HTML, fica lista dos principais objectos de sistemas utilizados:
+	-	WINDOW	:	Objecto de topo na hierarquia DOM, representa a janela de navegação
+					é criado automaticamente pelas tags BODY e FRAMESET
+	-	NAVIGATOR :	Contem informação sobre o navegador - Browser
+					- ver informações adicionais no ficheiro JSBrowser.htm
+	-	SCREEN :		Contem informação sobre o ecra
+					- ver informações adicionais no ficheiro JSBrowser.htm
+	-	HISTORY :		Contem informação sobre o historico de navegação
+	- 	LOCATION :	Contem informação sobre a localização actual - URL
+*/
+/*	Redireccionamento
+	Utilizando o HTML DOM, pode-se mudar a localização - URL - do browser 'forçando' o redireccionamento da página
+	no presente exemplo, ao executar o javascript, a janela será redireccionada para a página JSschekjs.htm
+*/
+				window.location="JSschekjs.htm";
+				
+		</SCRIPT>
+	</head>
+
+	<body>
+//  Se chegou aqui, então o JavaScript não está a funcionar, ou seja, o redireccionamento falhou, 
+//o que significa que o utilizador tem o JavaScript desactivado ou o browser não suporta JavaScript            
+	sem JavaScript
+
+	</body>
+</html>
